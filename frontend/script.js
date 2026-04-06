@@ -48,3 +48,4 @@ function type() {
 }
 
 type();
+
