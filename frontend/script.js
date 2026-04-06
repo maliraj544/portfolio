@@ -21,7 +21,7 @@ window.addEventListener("scroll", function() {
 
 // Typing animation
 const typingText = document.querySelector("#hero h2");
-const words = ["Full Stack Developer", "Java Programmer", "Problem Solver", "Open to Work 🚀"];
+const words = ["Software Developer", "Full Stack Developer", "Problem Solver", "Open to Work 🚀"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
