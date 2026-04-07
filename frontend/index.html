@@ -9,9 +9,14 @@
 </head>
 <body>
 
- <nav>
+<nav>
   <div class="logo">Aliraj.</div>
-  <ul>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul id="nav-menu">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
@@ -22,7 +27,7 @@
   </ul>
 </nav>
 
-  <section id="hero">
+<section id="hero">
   <div class="hero-content">
     <div class="hero-text">
       <h1>Hi, I'm <span>Aliraj Mansuri</span></h1>
@@ -39,31 +44,23 @@
   </div>
 </section>
 
-  <section id="about">
+<section id="about">
   <h2>About Me</h2>
   <div class="about-content">
-    <p>
-  Hey! I'm <span class="highlight">Aliraj Mansuri</span>, a final year 
-  B.Tech CSE student at <span class="highlight">Galgotias University</span>, 
-  Greater Noida.
-</p>
-<p>
-  I'm a passionate <span class="highlight">Full Stack Developer</span> who loves 
-  building complete web applications from scratch — right from designing 
-  clean user interfaces to building powerful backends and databases.
-</p>
-<p>
-  I work with <span class="highlight">React.js</span> on the frontend, 
-  <span class="highlight">Node.js & Express</span> on the backend, and 
-  <span class="highlight">MongoDB & MySQL</span> for databases. I also have 
-  hands-on experience with <span class="highlight">AWS cloud deployment</span> 
-  from my internship.
-</p>
-<p>
-  I'm currently looking for <span class="highlight">SDE / Full Stack Developer 
-  opportunities</span> where I can build real products and grow as an engineer. 
-  Let's connect! 🚀
-</p>
+    <p>Hey! I'm <span class="highlight">Aliraj Mansuri</span>, a final year 
+    B.Tech CSE student at <span class="highlight">Galgotias University</span>, 
+    Greater Noida.</p>
+    <p>I'm a passionate <span class="highlight">Full Stack Developer</span> who loves 
+    building complete web applications from scratch — right from designing 
+    clean user interfaces to building powerful backends and databases.</p>
+    <p>I work with <span class="highlight">React.js</span> on the frontend, 
+    <span class="highlight">Node.js & Express</span> on the backend, and 
+    <span class="highlight">MongoDB & MySQL</span> for databases. I also have 
+    hands-on experience with <span class="highlight">AWS cloud deployment</span> 
+    from my internship.</p>
+    <p>I'm currently looking for <span class="highlight">SDE / Full Stack Developer 
+    opportunities</span> where I can build real products and grow as an engineer. 
+    Let's connect! 🚀</p>
     <div class="about-stats">
       <div class="stat">
         <h3>7.52</h3>
@@ -79,16 +76,15 @@
       </div>
       <div class="stat">
         <h3>200+</h3>
-        <p>LeetCode Days</p>
+        <p>LeetCode Problems</p>
       </div>
     </div>
   </div>
 </section>
 
-  <section id="skills">
+<section id="skills">
   <h2>Skills</h2>
   <div class="skills-container">
-
     <div class="skill-category">
       <h3>Frontend</h3>
       <div class="skills-grid">
@@ -98,7 +94,6 @@
         <span>React.js</span>
       </div>
     </div>
-
     <div class="skill-category">
       <h3>Backend</h3>
       <div class="skills-grid">
@@ -108,7 +103,6 @@
         <span>JWT Auth</span>
       </div>
     </div>
-
     <div class="skill-category">
       <h3>Database</h3>
       <div class="skills-grid">
@@ -116,7 +110,6 @@
         <span>MySQL</span>
       </div>
     </div>
-
     <div class="skill-category">
       <h3>Languages</h3>
       <div class="skills-grid">
@@ -125,7 +118,6 @@
         <span>JavaScript</span>
       </div>
     </div>
-
     <div class="skill-category">
       <h3>Tools</h3>
       <div class="skills-grid">
@@ -136,19 +128,18 @@
       </div>
     </div>
     <div class="skill-category">
-  <h3>Soft Skills</h3>
-  <div class="skills-grid">
-    <span>Teamwork</span>
-    <span>Leadership</span>
-    <span>Problem Solving</span>
-    <span>Communication</span>
-  </div>
-</div>
-
+      <h3>Soft Skills</h3>
+      <div class="skills-grid">
+        <span>Teamwork</span>
+        <span>Leadership</span>
+        <span>Problem Solving</span>
+        <span>Communication</span>
+      </div>
+    </div>
   </div>
 </section>
 
-  <section id="experience">
+<section id="experience">
   <h2>Experience</h2>
   <div class="experience-card">
     <div class="exp-header">
@@ -175,7 +166,6 @@
 <section id="certifications">
   <h2>Certifications</h2>
   <div class="cert-grid">
-
     <div class="cert-card">
       <div class="cert-icon">🏆</div>
       <div class="cert-info">
@@ -185,7 +175,6 @@
       </div>
       <a href="https://www.credly.com/go/TH9Q8jEP" target="_blank" class="cert-link">Verify →</a>
     </div>
-
     <div class="cert-card">
       <div class="cert-icon">🔐</div>
       <div class="cert-info">
@@ -195,13 +184,12 @@
       </div>
       <a href="https://www.credly.com/go/Kl74J4iA" target="_blank" class="cert-link">Verify →</a>
     </div>
-
   </div>
 </section>
-  <section id="projects">
+
+<section id="projects">
   <h2>Projects</h2>
   <div class="projects-grid">
-
     <div class="project-card">
       <div class="project-header">
         <h3>Feedback Collection Tool</h3>
@@ -219,7 +207,6 @@
         <a href="https://github.com/maliraj544" target="_blank">GitHub →</a>
       </div>
     </div>
-
     <div class="project-card">
       <div class="project-header">
         <h3>Portfolio Website</h3>
@@ -237,44 +224,38 @@
         <a href="https://portfolio-pi-seven-0qlxm1mwjr.vercel.app/" target="_blank">Live →</a>
       </div>
     </div>
-
   </div>
 </section>
 
-  <section id="contact">
-  <h2>Contact Me</h2>
-  <p>I'm currently looking for full-stack developer opportunities!</p>
-  
-  <section id="achievements">
+<section id="achievements">
   <h2>Achievements</h2>
   <div class="achieve-grid">
-
     <div class="achieve-card">
       <div class="achieve-icon">🏆</div>
       <h3>LeetCode 200+ Problems</h3>
       <p>Solved 200+ DSA problems on LeetCode with 100 Days Badge</p>
     </div>
-
     <div class="achieve-card">
       <div class="achieve-icon">⭐</div>
       <h3>HackerRank 3 Star Java</h3>
       <p>Achieved 3 star rating in Java on HackerRank platform</p>
     </div>
-
     <div class="achieve-card">
       <div class="achieve-icon">💻</div>
       <h3>Full Stack Internship</h3>
       <p>Completed 3 months AWS Virtual Internship in Full Stack Development</p>
     </div>
-
     <div class="achieve-card">
       <div class="achieve-icon">📜</div>
       <h3>IBM Certified</h3>
       <p>Earned 2 IBM SkillsBuild certifications in Web Dev & Cybersecurity</p>
     </div>
-
   </div>
 </section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>I'm currently looking for full-stack developer opportunities!</p>
   <div class="contact-links">
     <a href="mailto:maliraj544@gmail.com">📧 maliraj544@gmail.com</a>
     <a href="https://linkedin.com/in/maliraj544" target="_blank">💼 LinkedIn</a>
@@ -282,8 +263,6 @@
   </div>
 </section>
 
-  <script src="script.js"></script>
-</body>
 <footer>
   <div class="footer-links">
     <a href="https://github.com/maliraj544" target="_blank">GitHub</a>
@@ -294,4 +273,7 @@
   <p>Designed & Built by <span>Aliraj Mansuri</span></p>
   <p>© 2026 All Rights Reserved</p>
 </footer>
+
+<script src="script.js"></script>
+</body>
 </html>

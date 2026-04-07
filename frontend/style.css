@@ -46,7 +46,6 @@ nav ul a:hover {
 
 section {
   padding: 80px 60px;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,6 +103,11 @@ section {
   padding: 24px;
   margin-top: 30px;
   max-width: 500px;
+  transition: border-color 0.3s;
+}
+
+.project-card:hover {
+  border-color: #00d4ff;
 }
 
 .project-card h3 {
@@ -115,6 +119,7 @@ section {
   color: #aaa;
   margin-bottom: 16px;
   line-height: 1.6;
+  
 }
 
 .project-card a {
@@ -574,5 +579,47 @@ footer span {
 @media (max-width: 768px) {
   .achieve-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #00d4ff;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #0a0a0a;
+    padding: 20px;
+    border-bottom: 1px solid #222;
+    gap: 16px;
+  }
+
+  #nav-menu.active {
+    display: flex;
+  }
+  #nav-menu a:hover {
+    color: #00d4ff;
   }
 }
