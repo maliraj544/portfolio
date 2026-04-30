@@ -11,7 +11,12 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div style={{ backgroundColor: '#0a0a0a', minHeight: '100vh' }}>
+    <div style={{ 
+      backgroundColor: '#0a0a0a', 
+      minHeight: '100vh',
+      overflowX: 'hidden',
+      width: '100%',
+    }}>
       <Navbar />
       <Hero />
       <About />

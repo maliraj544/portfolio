@@ -1,3 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  overflow-x: hidden;
+}
+
+
+
 
 body {
   margin: 0;
