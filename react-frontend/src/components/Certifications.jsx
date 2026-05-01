@@ -28,7 +28,7 @@ function Certifications() {
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(2, 1fr)',
+        gridTemplateColumns: window.innerWidth < 768 ? '1fr' : 'repeat(2, 1fr)',
         gap: '20px',
       }}>
         {certs.map((cert, index) => (
