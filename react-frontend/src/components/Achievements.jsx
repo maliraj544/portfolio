@@ -23,7 +23,7 @@ function Achievements() {
   ];
 
   return (
-    <section id="achievements" style={{ padding: '80px 60px', backgroundColor: '#0a0a0a' }}>
+    <section id="achievements" className="section-container" style={{ backgroundColor: '#0a0a0a' }}>
       <h2 style={{
         fontSize: '36px',
         color: '#fff',
@@ -32,11 +32,7 @@ function Achievements() {
         marginBottom: '30px',
       }}>Achievements</h2>
 
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: window.innerWidth < 768 ? '1fr' : 'repeat(2, 1fr)',
-        gap: '20px',
-      }}>
+      <div className="grid-2" style={{ gap: '20px' }}>
         {achievements.map((item, index) => (
           <div key={index} style={{
             background: '#111',

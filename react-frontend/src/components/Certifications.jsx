@@ -17,7 +17,7 @@ function Certifications() {
   ];
 
   return (
-    <section id="certifications" style={{ padding: '80px 60px', backgroundColor: '#0a0a0a' }}>
+    <section id="certifications" className="section-container" style={{ backgroundColor: '#0a0a0a' }}>
       <h2 style={{
         fontSize: '36px',
         color: '#fff',
@@ -26,11 +26,7 @@ function Certifications() {
         marginBottom: '30px',
       }}>Certifications</h2>
 
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: window.innerWidth < 768 ? '1fr' : 'repeat(2, 1fr)',
-        gap: '20px',
-      }}>
+      <div className="grid-2" style={{ gap: '20px' }}>
         {certs.map((cert, index) => (
           <div key={index} style={{
             background: '#111',
