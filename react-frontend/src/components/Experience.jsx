@@ -1,6 +1,9 @@
 function Experience() {
   return (
-    <section id="experience" style={{ padding: '80px 60px', backgroundColor: '#0a0a0a' }}>
+    <section id="experience" style={{
+      padding: 'clamp(40px, 8vw, 80px) clamp(20px, 8vw, 60px)',
+      backgroundColor: '#0a0a0a',
+    }}>
       <h2 style={{
         fontSize: '36px',
         color: '#fff',
@@ -16,7 +19,14 @@ function Experience() {
         padding: '28px',
         borderLeft: '4px solid #00d4ff',
       }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'flex-start',
+          marginBottom: '16px',
+          flexWrap: 'wrap',
+          gap: '10px',
+        }}>
           <div>
             <h3 style={{ color: '#fff', fontSize: '18px', marginBottom: '6px' }}>
               Full Stack Web Development Intern

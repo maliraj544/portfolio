@@ -9,33 +9,3 @@ body {
   overflow-x: hidden;
   width: 100%;
 }
-
-.section-container {
-  padding: 80px 60px;
-}
-
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-}
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-@media (max-width: 768px) {
-  .section-container {
-    padding: 40px 20px !important;
-  }
-  
-  .grid-2 {
-    grid-template-columns: 1fr !important;
-  }
-  
-  .grid-3 {
-    grid-template-columns: 1fr 1fr !important;
-  }
-}

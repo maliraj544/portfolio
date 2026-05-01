@@ -19,7 +19,10 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="section-container" style={{ backgroundColor: '#0a0a0a' }}>
+    <section id="projects" style={{
+      padding: 'clamp(40px, 8vw, 80px) clamp(20px, 8vw, 60px)',
+      backgroundColor: '#0a0a0a',
+    }}>
       <h2 style={{
         fontSize: '36px',
         color: '#fff',
@@ -28,7 +31,11 @@ function Projects() {
         marginBottom: '30px',
       }}>Projects</h2>
 
-      <div className="grid-2" style={{ gap: '24px' }}>
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+        gap: '24px',
+      }}>
         {projects.map((project, index) => (
           <div key={index} style={{
             background: '#111',
@@ -36,8 +43,8 @@ function Projects() {
             borderRadius: '10px',
             padding: '24px',
           }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
-              <h3 style={{ color: '#fff', fontSize: '18px' }}>{project.title}</h3>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '12px' }}>
+              <h3 style={{ color: '#fff', fontSize: '18px', flex: 1, marginRight: '10px' }}>{project.title}</h3>
               <span style={{
                 color: '#00d4ff',
                 border: '1px solid #00d4ff',
@@ -45,7 +52,6 @@ function Projects() {
                 borderRadius: '20px',
                 fontSize: '12px',
                 whiteSpace: 'nowrap',
-                height: 'fit-content',
               }}>{project.status}</span>
             </div>
             <p style={{ color: '#aaa', lineHeight: '1.6', marginBottom: '16px' }}>

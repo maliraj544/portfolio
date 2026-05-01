@@ -1,40 +1,20 @@
 function Skills() {
-  const isMobile = window.innerWidth < 768;
-  
   const skillCategories = [
-    {
-      title: 'Frontend',
-      skills: ['HTML', 'CSS', 'JavaScript', 'React.js']
-    },
-    {
-      title: 'Backend',
-      skills: ['Node.js', 'Express.js', 'REST APIs', 'JWT Auth']
-    },
-    {
-      title: 'Database',
-      skills: ['MongoDB', 'MySQL']
-    },
-    {
-      title: 'Languages',
-      skills: ['Java', 'C', 'JavaScript']
-    },
-    {
-      title: 'Tools',
-      skills: ['Git', 'GitHub', 'AWS', 'VS Code']
-    },
-    {
-      title: 'Soft Skills',
-      skills: ['Teamwork', 'Leadership', 'Problem Solving', 'Communication']
-    },
+    { title: 'Frontend', skills: ['HTML', 'CSS', 'JavaScript', 'React.js'] },
+    { title: 'Backend', skills: ['Node.js', 'Express.js', 'REST APIs', 'JWT Auth'] },
+    { title: 'Database', skills: ['MongoDB', 'MySQL'] },
+    { title: 'Languages', skills: ['Java', 'C', 'JavaScript'] },
+    { title: 'Tools', skills: ['Git', 'GitHub', 'AWS', 'VS Code'] },
+    { title: 'Soft Skills', skills: ['Teamwork', 'Leadership', 'Problem Solving', 'Communication'] },
   ];
 
   return (
-    <section id="skills" style={{ 
-      padding: isMobile ? '40px 16px' : '80px 60px', 
-      backgroundColor: '#0a0a0a' 
+    <section id="skills" style={{
+      padding: 'clamp(40px, 8vw, 80px) clamp(20px, 8vw, 60px)',
+      backgroundColor: '#0a0a0a',
     }}>
       <h2 style={{
-        fontSize: isMobile ? '28px' : '36px',
+        fontSize: '36px',
         color: '#fff',
         borderLeft: '4px solid #00d4ff',
         paddingLeft: '16px',
@@ -43,33 +23,33 @@ function Skills() {
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(3, 1fr)',
-        gap: '16px',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+        gap: '20px',
       }}>
         {skillCategories.map((category, index) => (
           <div key={index} style={{
             background: '#111',
             border: '1px solid #222',
             borderRadius: '10px',
-            padding: isMobile ? '14px' : '20px',
+            padding: '20px',
           }}>
             <h3 style={{
               color: '#00d4ff',
-              fontSize: '12px',
+              fontSize: '13px',
               textTransform: 'uppercase',
               letterSpacing: '1px',
               marginBottom: '12px',
               paddingBottom: '8px',
               borderBottom: '1px solid #222',
             }}>{category.title}</h3>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
               {category.skills.map((skill, i) => (
                 <span key={i} style={{
-                  padding: '4px 10px',
+                  padding: '5px 12px',
                   border: '1px solid #00d4ff',
                   borderRadius: '20px',
                   color: '#00d4ff',
-                  fontSize: '11px',
+                  fontSize: '12px',
                 }}>{skill}</span>
               ))}
             </div>
