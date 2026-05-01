@@ -32,7 +32,7 @@ function Hero() {
 
   return (
     <section id="hero" style={{
-      padding: '60px 20px',
+      padding: '60px 16px',
       backgroundColor: '#0a0a0a',
     }}>
       <div style={{

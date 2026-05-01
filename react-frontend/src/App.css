@@ -17,7 +17,7 @@ body {
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: '24px';
+  gap: 24px;
 }
 
 .grid-3 {
@@ -28,7 +28,7 @@ body {
 
 @media (max-width: 768px) {
   .section-container {
-    padding: 40px 16px !important;
+    padding: 40px 20px !important;
   }
   
   .grid-2 {
