@@ -1,9 +1,6 @@
 function About() {
   return (
-    <section id="about" style={{
-      padding: '80px 60px',
-      backgroundColor: '#0a0a0a',
-    }}>
+    <section id="about" className="section-container" style={{ backgroundColor: '#0a0a0a' }}>
       <h2 style={{
         fontSize: '36px',
         color: '#fff',
@@ -31,7 +28,12 @@ function About() {
           fontWeight: '600' }}>MongoDB & MySQL</span> for databases.
         </p>
 
-        <div style={{ display: 'flex', gap: '40px', marginTop: '40px' }}>
+        <div style={{ 
+          display: 'grid',
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          gap: '20px',
+          marginTop: '40px',
+        }}>
           {[
             { value: '7.52', label: 'CGPA' },
             { value: '1+', label: 'Projects' },
