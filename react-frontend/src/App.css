@@ -18,3 +18,19 @@ section {
     padding: 80px 60px !important;
   }
 }
+
+@media (max-width: 767px) {
+  section {
+    padding: 40px 16px !important;
+    overflow-x: hidden !important;
+  }
+  
+  .skills-container, .projects-grid, 
+  .cert-grid, .achieve-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  nav ul {
+    display: none !important;
+  }
+}
