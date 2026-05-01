@@ -1,4 +1,6 @@
 function Skills() {
+  const isMobile = window.innerWidth < 768;
+  
   const skillCategories = [
     {
       title: 'Frontend',
@@ -27,9 +29,12 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" style={{ padding: '80px 60px', backgroundColor: '#0a0a0a' }}>
+    <section id="skills" style={{ 
+      padding: isMobile ? '40px 16px' : '80px 60px', 
+      backgroundColor: '#0a0a0a' 
+    }}>
       <h2 style={{
-        fontSize: '36px',
+        fontSize: isMobile ? '28px' : '36px',
         color: '#fff',
         borderLeft: '4px solid #00d4ff',
         paddingLeft: '16px',
@@ -38,33 +43,33 @@ function Skills() {
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(3, 1fr)',
-        gap: '24px',
+        gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(3, 1fr)',
+        gap: '16px',
       }}>
         {skillCategories.map((category, index) => (
           <div key={index} style={{
             background: '#111',
             border: '1px solid #222',
             borderRadius: '10px',
-            padding: '20px',
+            padding: isMobile ? '14px' : '20px',
           }}>
             <h3 style={{
               color: '#00d4ff',
-              fontSize: '14px',
+              fontSize: '12px',
               textTransform: 'uppercase',
               letterSpacing: '1px',
-              marginBottom: '16px',
+              marginBottom: '12px',
               paddingBottom: '8px',
               borderBottom: '1px solid #222',
             }}>{category.title}</h3>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
               {category.skills.map((skill, i) => (
                 <span key={i} style={{
-                  padding: '6px 14px',
+                  padding: '4px 10px',
                   border: '1px solid #00d4ff',
                   borderRadius: '20px',
                   color: '#00d4ff',
-                  fontSize: '13px',
+                  fontSize: '11px',
                 }}>{skill}</span>
               ))}
             </div>
