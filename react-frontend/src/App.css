@@ -9,3 +9,12 @@ body {
   overflow-x: hidden;
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex !important;
+  }
+  .nav-links {
+    display: none !important;
+  }
+}
