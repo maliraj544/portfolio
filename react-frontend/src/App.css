@@ -18,3 +18,12 @@ body {
     display: none !important;
   }
 }
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none !important;
+  }
+  .nav-links {
+    display: flex !important;
+  }
+}

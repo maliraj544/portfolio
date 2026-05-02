@@ -35,25 +35,21 @@ function Navbar() {
         Aliraj.
       </div>
 
-      {/* Hamburger Icon - Mobile only */}
       <div
+        className="hamburger"
         onClick={() => setMenuOpen(!menuOpen)}
         style={{
-          display: 'none',
           flexDirection: 'column',
           gap: '5px',
           cursor: 'pointer',
         }}
-        className="hamburger"
       >
-        <span style={{ width: '25px', height: '3px', backgroundColor: '#00d4ff', borderRadius: '3px' }}></span>
-        <span style={{ width: '25px', height: '3px', backgroundColor: '#00d4ff', borderRadius: '3px' }}></span>
-        <span style={{ width: '25px', height: '3px', backgroundColor: '#00d4ff', borderRadius: '3px' }}></span>
+        <span style={{ width: '25px', height: '3px', backgroundColor: '#00d4ff', borderRadius: '3px', display: 'block' }}></span>
+        <span style={{ width: '25px', height: '3px', backgroundColor: '#00d4ff', borderRadius: '3px', display: 'block' }}></span>
+        <span style={{ width: '25px', height: '3px', backgroundColor: '#00d4ff', borderRadius: '3px', display: 'block' }}></span>
       </div>
 
-      {/* Desktop Nav */}
       <ul className="nav-links" style={{
-        display: 'flex',
         listStyle: 'none',
         gap: '24px',
         margin: 0,
@@ -73,7 +69,6 @@ function Navbar() {
         ))}
       </ul>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <ul style={{
           position: 'absolute',
