@@ -40,7 +40,10 @@ function Contact() {
   };
 
   return (
-    <section id="contact" style={{ padding: '80px 60px', backgroundColor: '#0a0a0a' }}>
+    <section id="contact" style={{
+      padding: 'clamp(40px, 8vw, 80px) clamp(20px, 8vw, 60px)',
+      backgroundColor: '#0a0a0a',
+    }}>
       <h2 style={{
         fontSize: '36px',
         color: '#fff',
@@ -54,8 +57,12 @@ function Contact() {
         SDE / Full Stack Developer</span> opportunities. Let's connect! 🚀
       </p>
 
-      <div style={{ display: 'flex', gap: '60px' }}>
-        <div style={{ flex: 1 }}>
+      <div style={{
+        display: 'flex',
+        gap: '60px',
+        flexWrap: 'wrap',
+      }}>
+        <div style={{ flex: 1, minWidth: '280px' }}>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
@@ -98,7 +105,12 @@ function Contact() {
           </form>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', justifyContent: 'center' }}>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '16px',
+          justifyContent: 'center',
+        }}>
           <a href="mailto:maliraj544@gmail.com" style={{
             color: '#00d4ff', textDecoration: 'none', fontSize: '18px' }}>
             📧 maliraj544@gmail.com
