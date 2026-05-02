@@ -10,20 +10,19 @@ body {
   width: 100%;
 }
 
+.hamburger {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: flex !important;
   }
   .nav-links {
     display: none !important;
-  }
-}
-
-@media (min-width: 769px) {
-  .hamburger {
-    display: none !important;
-  }
-  .nav-links {
-    display: flex !important;
   }
 }
